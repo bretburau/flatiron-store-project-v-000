@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before(:each) do
+    User.create(email: "me@me.com", password: 'tama9696')
     @user = User.first
   end
 
